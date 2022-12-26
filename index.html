@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+  <p>안녕하세요!</p>
+  <p>&lt;&gt;</p>
+  <p>공&nbsp;백</p>
+
+  <h1>안녕하세요!</h1>
+  <h2>안녕하세요!</h2>
+  <h3>안녕하세요!</h3>
+  <h4>안녕하세요!</h4>
+  <h5>안녕하세요!</h5>
+  <h6>안녕하세요!</h6>
+
+  <p style="font-size:2rem; font-weight: bold">안녕하세요!</p>
+
+  <!--
+    ol: 순서 목록
+    ul: 순서가 없는 목록
+    li: 목록의 내용
+  -->
+  <ol start="5">
+    <li>가</li>
+    <li>나</li>
+    <li value="10">다</li>
+    <li>라</li>
+  </ol>
+
+  <ul>
+    <li>가</li>
+    <li>나</li>
+    <li>다</li>
+    <li>라</li>
+  </ul>
+
+  <p>
+    안녕하세요! <b>서무민입니다.</b>
+    <br>
+    안녕하세요! <i>서무민입니다.</i>
+    <br>
+    안녕하세요! <u>서무민입니다.</u>
+    <br>
+    <addr title="HyperText Markup Language">HTML</addr>
+  </p>
+
+<!--
+  1. 절대 경로 : 인터넷, url로 접속가능한 경로
+  2. 상대 경로 : 개발환경에서 시작되는 경로
+  > . 현재 파일이 위치한 경로
+  > .. 이전 경로/ 상위 경로
+  > / 구분
+-->
+
+  <a href="./test/sample.html">
+    sample
+  </a>
+  <br>
+
+  <a href="./test/panda/coding.html">
+    coding
+  </a>
+  <br>
+
+  <img src="./img/프로필.png" alt="대체텍스트">
+  <br>
+
+  <!--
+    1. Div : division / 가상의 경계, 가상의 레이아웃
+    2. Span
+  -->
+
+  <nav>
+
+  </nav>
+
+  <p>
+    안녕하세요! <span>서무민</span>입니다.
+  </p>
+
+  <br>
+  <br>
+  <br>
+
+  <!-- 
+      일단 div 태그로 나누자.
+      1. 유지보수가 편해짐
+      2. 협업이 쉬워짐
+      > div. class id (직관적인 명사를 사용해주자)
+  -->
+
+  <!--px, em, rem-->
+  <!-- <div class="container" style="font-size: 8px;">
+        일반적으로 16px = 1em = 1rem-->
+
+    <p class="px">px</p>
+    <p class="em">em</p>  부모태그에게 font-size속성이 있으면, 그 속성을 1em으로 계산함.
+    <p class="rem">rem</p>
+  </div> -->
+
+  <blockquote></blockquote>
+
+  <pre>
+    *^_^*
+  </pre>
+
+  <figure> /* 설명을 붙여줄때 */
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi optio numquam nobis vitae pariatur assumenda libero fuga fugit. Deserunt natus quo ipsa earum! Ipsa earum nihil ad asperiores. Accusamus, corporis.
+    <figcaption>by moomin</figcaption>
+  </figure>
+
+  <b>굵은 글씨 요소이지만 리뷰의 제품명같은 특정 부분을 굵게 표시할 때</b>
+  <strong>특정 부분을 강조할 때</strong>
+  <i>기울임꼴, 어떤 이유로 강조하기 위해</i>
+  <mark>사용자가 관심을 가질 텍스트에 형광표시</mark>
+  <small>덧붙이는 글이나, 저작권과 법률 표기 등에</small>
+  <sup>위 첨자</sup>
+  <sub>아래 첨자</sub>
+  <del>문서에서 제거된 텍스트의 범위를 나타냄, 취소선</del>
+  <ins>추가된 텍스트의 범위를 나타냄</ins>
+  <code>문장 중간에 코드 태그를 짧게 넣어줄때</code>
+  <p>entity는 특수문자를 있는 그대로 표현할때</p>
+  <br>
+  <div>블록라인</div>
+  <span>인라인</span>
+  <nav>탐색 구획 요소, 탐색을 용이하게 해줌</nav>
+  
+  <h2>ordered list</h2>
+
+  <ol>
+    <li>안녕하세요</li>
+    <li>안녕하세요</li>
+    <li>안녕하세요</li>
+  </ol>
+  
+  <h2>unodered list</h2>
+
+  <ul>
+    <li>안녕하세요</li>
+    <li>안녕하세요</li>
+    <li>안녕하세요</li>
+  </ul>
+
+  <dl>하나의 용어와 하나의 정의</dl>
+
+  <dt>안녕하세요
+    <dd>서무민입니다</dd>
+  </dt>
+
+  <table>
+    <caption>example caption</caption>
+    <tr>
+      <th>login</th>
+      <th>email</th>
+    </tr>
+    <tr>
+      <td>user</td>
+      <td>email</td>
+    </tr>
+    <tr>
+      <td>user2</td>
+      <td>email</td>
+    </tr>
+  </table>
+
+  <!-- 
+  img 유형
+  1. 래스터 : jpeg / png / gif / webp (확대 시 화질이 깨져보임)
+  2. 벡터 : svg -아이콘 등 (확대를 해도 깨지지 않음)
+  can i use -> 사이트 활용 : 웹페이지를 브라우저에서 사용 가능한지.
+ -->
+
+  <img src="C:\Users\s\Desktop" alt="이미지">  
+
+<h2>form 요소</h2>
+
+<div>
+<form action="" mathod="get">  <-- 주소창 뒤에 텍스트 값을 입력해서 보여짐, 회원가입시 x -->
+  <input type="text" name="test">
+  <button type="submit">제출</button>
+</form>
+</div>
+
+<div>
+<form action="" mathod="post"> <-- 주소창에 텍스트 값을 숨겨져서 보여짐 -->
+  <input type="text" name="test">
+  <button type="submit">제출</button>
+</form>
+</div>
+
+
+<form action="" mathod="get"> 
+
+  <div>
+  <label for="foodname"> 음식 이름:</label>
+  <input type="text" name="foodname" id="foodname">
+  </div>
+
+
+  <fieldset>
+    <legend>구글에서 css없이 자동 스타일 해주는 기능</legend>
+
+  <div>
+  <label> 색깔:
+  <input type="text" name="color">
+  </label>
+  </div>
+  </fieldset>
+
+  <button type="submit">제출</button>
+
+
+<h2>input 요소</h2>
+
+<form action="" mathod="get"> 
+
+  <div>
+    <label> number :
+    <input type="number" name="number">
+    </label>
+  </div>
+
+  <div>
+    <label> range :
+    <input type="range" name="range">
+    </label>
+  </div>
+
+  <div>
+    <label> date :
+    <input type="date" name="date">
+    </label>
+  </div>
+
+  <div>
+    <label> checkbox :
+    <input type="checkbox" name="checkbox">
+    </label>
+  </div>
+
+  <div>
+    <label for="age">나이 :</label>
+    <input type="number" name="age" id="age" placeholder="10" autocomplete="off" required>
+  </div>
+
+  <button type="submit">제출</button>
+
+  <input type="submit" value="제출하기">
+  <input type="reset" value="초기화">
+
+
+
+
+
+
+
+
+
+
+</form>
+  
+
+
+
+
+
+
+  
+
+
+
+
+</body>
+
+</html>
